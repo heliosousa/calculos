@@ -9,18 +9,36 @@ namespace Calculos
     /// <summary>
     /// Implementa operações aritméticas.
     /// </summary>
+    /// 
+
+    /// <summary>
+    /// Operação soma.
+    /// </summary>
+    /// <returns>Retorna a soma de dois números.</returns>
     internal class Aritmetica
     {
         public int Somar(int x, int y)
         {
             return x + y;
         }
-    
 
-    public int Subtrair(int x, int y)
+        /// <summary>
+        /// Operação subtração.
+        /// </summary>
+        /// <returns>Retorna o resultado da subtração de dois números.</returns>
+        public int Subtrair(int x, int y)
         {
             return x - y;
         }
 
+        /// <summary>
+        /// Tipo de conversão de temperatura a executar.
+        /// </summary>
+        public enum ConversaoTemperatura
+        {
+            Nulo = 0,
+            CelsiusFahrenheit,
+            FahrenheitCelsius
+        }
     }
 }
