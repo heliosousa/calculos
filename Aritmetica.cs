@@ -15,9 +15,9 @@ namespace Calculos
     /// Operação soma.
     /// </summary>
     /// <returns>Retorna a soma de dois números.</returns>
-    internal class Aritmetica
+    internal static class Aritmetica
     {
-        public int Somar(int x, int y)
+        public static int Somar(int x, int y)
         {
             return x + y;
         }
@@ -26,19 +26,11 @@ namespace Calculos
         /// Operação subtração.
         /// </summary>
         /// <returns>Retorna o resultado da subtração de dois números.</returns>
-        public int Subtrair(int x, int y)
+        public static  int Subtrair(int x, int y)
         {
             return x - y;
         }
 
-        /// <summary>
-        /// Tipo de conversão de temperatura a executar.
-        /// </summary>
-        public enum ConversaoTemperatura
-        {
-            Nulo = 0,
-            CelsiusFahrenheit,
-            FahrenheitCelsius
-        }
+
     }
 }
